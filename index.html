@@ -1,0 +1,100 @@
+<!DOCTYPE html> <!-- ✅ ব্রাউজারকে বলে: "এটা HTML5 ফাইল" -->
+<html lang="en"> <!-- ✅ পেজের ভাষা ইংরেজি -->
+
+<head>
+    <meta charset="UTF-8"> <!-- ✅ সব অক্ষর ঠিকভাবে দেখানোর জন্য -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ মোবাইলে ঠিকভাবে দেখানোর জন্য -->
+    <title>My Portfolio</title> <!-- ✅ ব্রাউজার ট্যাবে যে নাম দেখাবে -->
+    <link rel="stylesheet" href="style.css"> <!-- ✅ CSS ফাইল যুক্ত করা -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- ✅ সুন্দর ফন্ট -->
+</head>
+
+<body> <!-- ✅ দৃশ্যমান সব কিছু এখানে -->
+
+    <!-- 🌟 Hero Section (উপরের অংশ) -->
+    <header class="hero">
+        <div class="container">
+            <img src="my_picture.jpg" alt="My Photo" class="profile-img"> <!-- ✅ আপনার ছবি -->
+            <h1>Amit Kumar Barman</h1> <!-- ✅ আপনার নাম ইংরেজিতে -->
+            <p class="tagline">Frontend Developer | Learning Next.js</p> <!-- ✅ ট্যাগলাইন -->
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Contact Me</a> <!-- ✅ Contact বাটন -->
+                <a href="#projects" class="btn btn-outline">View Projects</a> <!-- ✅ Projects বাটন -->
+            </div>
+        </div>
+    </header>
+
+    <!-- 👤 About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am learning web development. I have learned HTML, CSS, and JavaScript. Now I am learning React and
+                Next.js. My goal is to become a skilled Frontend Developer.</p>
+        </div>
+    </section>
+
+    <!-- 🛠️ Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Git</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 📦 Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>To-Do List</h3>
+                    <p>A task manager app built with JavaScript.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>An app that shows weather using an API.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Calculator</h3>
+                    <p>A simple calculator app.</p>
+                    <a href="#" class="project-link">View Details →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:myemail@example.com">myemail@example.com</a></p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="https://facebook.com/yourusername" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Your Name. All rights reserved.</p> <!-- ✅ কপিরাইট -->
+    </footer>
+
+</body>
+
+</html>
