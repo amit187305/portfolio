@@ -1,17 +1,16 @@
-/* ============================================
-   🧹 Basic Reset
-   ============================================ */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+
+    font-family: 'poppins', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -20,66 +19,91 @@ body {
     padding: 0 20px;
 }
 
-/* ============================================
-   🌟 Hero Section
-   ============================================ */
 .hero {
     text-align: center;
+    /* ✅ সব কিছু মাঝখানে */
     padding: 80px 20px;
+    /* ✅ ভিতরের ফাঁকা */
     background: linear-gradient(135deg, #667eea, #764ba2);
+    /* ✅ সুন্দর গ্রেডিয়েন্ট রঙ */
     color: white;
+    /* ✅ টেক্সট সাদা */
 }
 
 .profile-img {
+    /* ✅ প্রোফাইল ছবি */
     width: 160px;
+    /* ✅ প্রস্থ */
     height: 160px;
+    /* ✅ উচ্চতা */
     border-radius: 50%;
+    /* ✅ গোলাকার করা */
     border: 5px solid white;
+    /* ✅ সাদা বর্ডার */
     object-fit: cover;
+    /* ✅ ছবি ঠিকভাবে বসানো */
     margin-bottom: 20px;
+    /* ✅ নিচে ফাঁকা */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* ✅ ছায়া */
 }
 
 .hero h1 {
     font-size: 2.5rem;
+    /* ✅ ফন্ট সাইজ বড় */
     margin-bottom: 10px;
     font-weight: 700;
+    /* ✅ মোটা */
 }
 
 .tagline {
     font-size: 1.1rem;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     opacity: 0.9;
+    /* ✅ হালকা স্বচ্ছ */
 }
 
 .hero-buttons {
+    /* ✅ বাটনগুলোর বক্স */
     display: flex;
+    /* ✅ পাশাপাশি সাজানো */
     gap: 15px;
+    /* ✅ বাটনের মধ্যে ফাঁকা */
     justify-content: center;
+    /* ✅ মাঝখানে */
     flex-wrap: wrap;
+    /* ✅ ছোট স্ক্রিনে নিচে নামবে */
 }
 
 .btn {
+    /* ✅ সব বাটনের কমন স্টাইল */
     display: inline-block;
     padding: 12px 30px;
     border-radius: 25px;
+    /* ✅ গোল কোণা */
     font-weight: 600;
     text-decoration: none;
+    /* ✅ আন্ডারলাইন মুছে ফেলা */
     transition: all 0.3s ease;
+    /* ✅ মসৃণ পরিবর্তন */
 }
 
 .btn-primary {
+    /* ✅ প্রাইমারি বাটন */
     background: white;
     color: #764ba2;
 }
 
-.btn-primary:hover {
+btn-primary:hover {
+    /* ✅ মাউস উপরে রাখলে */
     background: #333;
     color: white;
     transform: translateY(-2px);
+    /* ✅ একটু উপরে উঠবে */
 }
 
-.btn-outline {
+btn-outline {
+    /* ✅ আউটলাইন বাটন */
     border: 2px solid white;
     color: white;
 }
@@ -90,14 +114,13 @@ body {
     transform: translateY(-2px);
 }
 
-/* ============================================
-   📄 Sections
-   ============================================ */
 .section {
     padding: 60px 0;
+    /* ✅ উপর-নিচে ফাঁকা */
 }
 
 .section-alt {
+    /* ✅ ভিন্ন রঙের সেকশন */
     background: #f0f0f5;
 }
 
@@ -105,11 +128,13 @@ body {
     font-size: 2rem;
     margin-bottom: 30px;
     color: #764ba2;
+    /* ✅ বেগুনি রঙ */
     text-align: center;
     position: relative;
 }
 
 .section h2::after {
+    /* ✅ হেডিংয়ের নিচে ছোট লাইন */
     content: '';
     display: block;
     width: 60px;
@@ -119,9 +144,6 @@ body {
     border-radius: 2px;
 }
 
-/* ============================================
-   👤 About
-   ============================================ */
 #about p {
     text-align: center;
     font-size: 1.05rem;
@@ -129,15 +151,13 @@ body {
     margin: 0 auto;
 }
 
-/* ============================================
-   🛠️ Skills
-   ============================================ */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
     list-style: none;
+    /* ✅ বুলেট পয়েন্ট মুছে ফেলা */
 }
 
 .skills-list li {
@@ -152,16 +172,16 @@ body {
 
 .skills-list li:hover {
     background: #764ba2;
-    transform: translateY(-3px);
+    transform: translateY(-8px);
 }
 
-/* ============================================
-   📦 Projects
-   ============================================ */
 .projects-grid {
     display: grid;
+    /* ✅ গ্রিড লেআউট */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* ✅ অটো কলাম */
     gap: 20px;
+    /* ✅ কার্ডের মধ্যে ফাঁকা */
 }
 
 .project-card {
@@ -169,12 +189,25 @@ body {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    /* ✅ হালকা ছায়া */
+    transition: all 0.3s ease;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    /* ✅ হালকা ছায়া */
     transition: all 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    /* ✅ মাউস উপরে রাখলে */
+    transform: translateY(-8px);
+    /* ✅ উপরে উঠবে */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    /* ✅ ছায়া বাড়বে */
 }
 
 .project-card h3 {
@@ -190,7 +223,7 @@ body {
 }
 
 .project-link {
-    color: #667eea;
+    color: #1337d8;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
@@ -198,24 +231,26 @@ body {
 
 .project-link:hover {
     color: #764ba2;
+
 }
 
-/* ============================================
-   📞 Contact
-   ============================================ */
 #contact {
     text-align: center;
+
+
 }
 
 #contact p {
     margin-bottom: 20px;
     font-size: 1.05rem;
+
 }
 
 #contact a {
-    color: #667eea;
+    color: #1337d8;
     text-decoration: none;
     font-weight: 600;
+    margin: 0 4px;
 }
 
 #contact a:hover {
@@ -244,7 +279,7 @@ body {
 }
 
 /* ============================================
-   🔻 Footer
+   🔻 Footer (নিচের অংশ)
    ============================================ */
 footer {
     text-align: center;
@@ -253,11 +288,9 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+  @media (max-width: 600px) {
 
-/* ============================================
-   📱 Responsive
-   ============================================ */
-@media (max-width: 600px) {
+    /* ✅ স্ক্রিন ৬০০px এর ছোট হলে */
     .hero h1 {
         font-size: 1.8rem;
     }
